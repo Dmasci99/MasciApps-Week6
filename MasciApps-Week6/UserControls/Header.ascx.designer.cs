@@ -7,13 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MasciApps_Week6.UserControls
-{
-
-
-    public partial class Header
-    {
-
+namespace MasciApps_Week6.UserControls {
+    
+    
+    public partial class Header {
+        
+        /// <summary>
+        /// PublicPlaceholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceholder;
+        
+        /// <summary>
+        /// login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor login;
+        
+        /// <summary>
+        /// register control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor register;
+        
+        /// <summary>
+        /// PrivatePlaceholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PrivatePlaceholder;
+        
+        /// <summary>
+        /// logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor logout;
+        
+        /// <summary>
+        /// mainMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor mainMenu;
+        
         /// <summary>
         /// students control.
         /// </summary>
@@ -22,7 +74,7 @@ namespace MasciApps_Week6.UserControls
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor students;
-
+        
         /// <summary>
         /// courses control.
         /// </summary>
@@ -31,7 +83,7 @@ namespace MasciApps_Week6.UserControls
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor courses;
-
+        
         /// <summary>
         /// departments control.
         /// </summary>
@@ -40,7 +92,7 @@ namespace MasciApps_Week6.UserControls
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor departments;
-
+        
         /// <summary>
         /// contact control.
         /// </summary>

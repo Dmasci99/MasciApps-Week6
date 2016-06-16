@@ -23,9 +23,20 @@
         <nav id="header-nav">
 	        <ul class="menu">
                 <li id="home"><a href="~/Default.aspx"><i class="fa fa-lg fa-home"></i> Home</a></li>
-                <li><a href="~/Students.aspx" runat="server" id="students"><i class="fa fa-lg fa-graduation-cap"></i> Students</a></li>
-                <li><a href="~/Courses.aspx" runat="server" id="courses"><i class="fa fa-lg fa-book"></i> Courses</a></li>
-                <li><a href="~/Departments.aspx" runat="server" id="departments"><i class="fa fa-lg fa-puzzle-piece"></i> Departments</a></li>
+
+                <asp:PlaceHolder runat="server" ID="PublicPlaceholder">
+                    <li><a href="~/Login.aspx" runat="server" id="login"><i class="fa fa-lg fa-sign-in"></i> Login</a></li>
+                    <li><a href="~/Register.aspx" runat="server" id="register"><i class="fa fa-lg fa-user-plus"></i> Register</a></li>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder runat="server" ID="PrivatePlaceholder">
+                    <li><a href="~/Logout.aspx" runat="server" id="logout"><i class="fa fa-lg fa-sign-out"></i> Logout</a></li>
+                    <li><a href="~/MainMenu.aspx" runat="server" id="mainMenu"><i class="fa fa-lg fa-map-signs"></i> Main Menu</a></li>
+                    <li><a href="~/Students.aspx" runat="server" id="students"><i class="fa fa-lg fa-graduation-cap"></i> Students</a></li>
+                    <li><a href="~/Courses.aspx" runat="server" id="courses"><i class="fa fa-lg fa-book"></i> Courses</a></li>
+                    <li><a href="~/Departments.aspx" runat="server" id="departments"><i class="fa fa-lg fa-puzzle-piece"></i> Departments</a></li>
+                </asp:PlaceHolder>
+
                 <li><a href="~/Contact.aspx" runat="server" id="contact"><i class="fa fa-lg fa-phone"></i> Contact</a></li>
 		        <div class="clear-float"></div><!--clear-float-->				
 	        </ul>

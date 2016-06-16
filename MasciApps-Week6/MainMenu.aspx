@@ -1,4 +1,4 @@
-﻿<%@ Page Title="MainMenu" Language="C#" MasterPageFile="~/Interior.Master" AutoEventWireup="true" CodeBehind="MainMenu.aspx.cs" Inherits="MasciApps_Week6.MainMenu" %>
+﻿<%@ Page Title="Main Menu" Language="C#" MasterPageFile="~/Interior.Master" AutoEventWireup="true" CodeBehind="MainMenu.aspx.cs" Inherits="MasciApps_Week6.MainMenu" %>
 
 
 <asp:Content ID="MainMenuPageContent" ContentPlaceHolderID="MainContent" runat="server">
