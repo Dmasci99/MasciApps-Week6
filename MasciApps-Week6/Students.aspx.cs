@@ -38,7 +38,7 @@ namespace MasciApps_Week6
         protected void GetStudents()
         {
             //connect to Entity Framework
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 //create a query string to add to the LINQ Query
                 string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
@@ -78,7 +78,7 @@ namespace MasciApps_Week6
             int studentID = (int)StudentsGridView.DataKeys[selectedRow].Values["StudentID"];
 
             //use EF to find the selected student from the database and remove it
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 Student deletedStudent = (from studentRecords in db.Students
                                           where studentRecords.StudentID == studentID

@@ -29,7 +29,7 @@ namespace MasciApps_Week6
         protected void GetDepartment()
         {
             int deptID = Convert.ToInt32(Request.QueryString["DepartmentID"]);
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 //select dept from db
                 var deptToGet = (from dept in db.Departments
@@ -54,7 +54,7 @@ namespace MasciApps_Week6
          */
         protected void DepartmentSaveButton_Click(object sender, EventArgs e)
         {
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 Department newDept = new Department();
                 int deptID = -1;

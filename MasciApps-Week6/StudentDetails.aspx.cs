@@ -31,7 +31,7 @@ namespace MasciApps_Week6
             int studentID = Convert.ToInt32(Request.QueryString["StudentID"]);
 
             //connect to the db with EF
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 //populate a student instance with the StudentID from the URL parameter
                 Student updateStudent = (from student in db.Students
@@ -60,7 +60,7 @@ namespace MasciApps_Week6
         protected void ContactSaveButton_Click(object sender, EventArgs e)
         {
             //use EF to connect to the Server
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 //use the student model to save a new record
                 Student newStudent = new Student()

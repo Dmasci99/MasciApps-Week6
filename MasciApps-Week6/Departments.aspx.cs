@@ -35,7 +35,7 @@ namespace MasciApps_Week6
         protected void GetDepartments()
         {
 
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 //query all departments from our ContosoModel
                 var departments = (from allDepartments in db.Departments
@@ -113,7 +113,7 @@ namespace MasciApps_Week6
         protected void DepartmentsGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int deptID = Convert.ToInt32(DepartmentsGridView.DataKeys[e.RowIndex].Values["DepartmentID"]);
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnectionEF db = new DefaultConnectionEF())
             {
                 var deptToDelete = (from dept in db.Departments
                                     where dept.DepartmentID == deptID
